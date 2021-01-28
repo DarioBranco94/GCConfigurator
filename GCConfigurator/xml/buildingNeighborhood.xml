@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neighborhood id="1" name="test">
+  <chargingStation id="0">
+    <user id="0"/>
+  </chargingStation>
+  <house id="1">
+    <user id="0">
+      <device>
+        <type>Consumer</type>
+        <name>WashDish</name>
+        <id>0</id>
+      </device>
+    </user>
+  </house>
+  <house id="2">
+    <user id="0"/>
+  </house>
+  <house id="3">
+    <user id="0"/>
+  </house>
+</neighborhood>

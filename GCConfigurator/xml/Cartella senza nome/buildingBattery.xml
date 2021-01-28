@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neighborhood id="1" name="test">
+  <house id="0">
+    <user id="0">
+      <battery>
+        <type>Prosumer</type>
+        <name>lol</name>
+        <id>7</id>
+      </battery>
+    </user>
+  </house>
+  <house id="1">
+    <user id="0">
+      <battery>
+        <type>Prosumer</type>
+        <name>lol</name>
+        <id>8</id>
+      </battery>
+    </user>
+  </house>
+  <house id="2">
+    <user id="0">
+      <battery>
+        <type>Prosumer</type>
+        <name>lol</name>
+        <id>9</id>
+      </battery>
+    </user>
+  </house>
+  <house id="3">
+    <user id="0">
+      <battery>
+        <type>Prosumer</type>
+        <name>lol</name>
+        <id>10</id>
+      </battery>
+    </user>
+  </house>
+</neighborhood>

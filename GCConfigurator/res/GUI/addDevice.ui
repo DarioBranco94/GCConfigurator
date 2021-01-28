@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create Device</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="4" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QListWidget" name="listWidget"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string> Add Possible Profile</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>images/icons8-statistics-80.png</normaloff>images/icons8-statistics-80.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Category</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Possible Profile</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string> Add Device</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/icons8-aggiungi-colonna-80.png</normaloff>images/icons8-aggiungi-colonna-80.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_2"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Create Ecar Model</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>images/icons8-plus-80.png</normaloff>images/icons8-plus-80.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addDeviceAction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadProfile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>221</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_2</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>isEcar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>389</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>389</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createEcar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addDeviceAction()</slot>
+  <slot>loadProfile()</slot>
+  <slot>isEcar()</slot>
+  <slot>createEcar()</slot>
+ </slots>
+</ui>

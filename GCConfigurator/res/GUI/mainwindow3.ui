@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GreenCharge</class>
+ <widget class="QMainWindow" name="GreenCharge">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1115</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GreenCharge Configurator Tool 1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="Settings">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/iconfinder_Settings_27879.png</normaloff>images/iconfinder_Settings_27879.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Static Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>Load previous built config</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QCheckBox" name="xmlCheckbox">
+                <property name="text">
+                 <string>Yes</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>Load neighborhood.xml file</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string> Browse</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-aggiungi-file-80.png</normaloff>images/icons8-aggiungi-file-80.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="text">
+                 <string> Load File</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-caricare-64.png</normaloff>images/icons8-caricare-64.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="QLineEdit" name="pathNeighborhood"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>Add an House or a Charging Station to the neighborhood topology</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_10">
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_28">
+                  <property name="text">
+                   <string>Add a Charging Station</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_27">
+                  <property name="text">
+                   <string>Add an House</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="pushButton_5">
+                  <property name="text">
+                   <string>  Add House</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>images/icons8-cottage-80.png</normaloff>images/icons8-cottage-80.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QPushButton" name="pushButton_6">
+                  <property name="text">
+                   <string>  Add Charging Station</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>images/icons8-batteria-per-auto-80.png</normaloff>images/icons8-batteria-per-auto-80.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <layout class="QHBoxLayout" name="horizontalLayout_15"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="Line" name="line_13">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string>Add a device to the neighborhood topology</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_11">
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_33">
+                  <property name="text">
+                   <string>Multiplicity</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_31">
+                  <property name="text">
+                   <string>Associated To:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <spacer name="horizontalSpacer_12">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="text">
+                     <string> Select Houses or Charging Stations</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>images/icons8-segno-di-spunta-512.png</normaloff>images/icons8-segno-di-spunta-512.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>25</width>
+                      <height>25</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pushButton_11">
+                  <property name="text">
+                   <string> Select Device</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>images/icons8-aggiungi-colonna-80.png</normaloff>images/icons8-aggiungi-colonna-80.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QSpinBox" name="spinBox">
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QPushButton" name="pushButton_7">
+                  <property name="text">
+                   <string> Add device</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>images/icons8-aggiungi-colonna-80.png</normaloff>images/icons8-aggiungi-colonna-80.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>25</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_30">
+                  <property name="text">
+                   <string>Device</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_32">
+                  <property name="text">
+                   <string>Selected Device:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="lineEdit"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="text">
+             <string> Remove All</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>images/icons8-delete-folder-80(1).png</normaloff>images/icons8-delete-folder-80(1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="text">
+             <string> Remove</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>images/icons8-minus-80.png</normaloff>images/icons8-minus-80.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="locale">
+           <locale language="Italian" country="Italy"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="lineWidth">
+           <number>4</number>
+          </property>
+          <property name="midLineWidth">
+           <number>4</number>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="animated">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="headerDefaultSectionSize">
+           <number>300</number>
+          </attribute>
+          <attribute name="headerMinimumSectionSize">
+           <number>100</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="Line" name="line_15">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/iconfinder_Settings_27879.png</normaloff>images/iconfinder_Settings_27879.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Dynamic Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Double click on a device to add a load</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="treeWidget_2">
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>4</number>
+              </property>
+              <property name="midLineWidth">
+               <number>4</number>
+              </property>
+              <property name="showDropIndicator" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="uniformRowHeights">
+               <bool>true</bool>
+              </property>
+              <property name="animated">
+               <bool>true</bool>
+              </property>
+              <property name="headerHidden">
+               <bool>true</bool>
+              </property>
+              <attribute name="headerDefaultSectionSize">
+               <number>200</number>
+              </attribute>
+              <attribute name="headerMinimumSectionSize">
+               <number>100</number>
+              </attribute>
+              <column>
+               <property name="text">
+                <string notr="true">1</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_16">
+                <property name="text">
+                 <string> Add Load to Multiple Devices</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <selectedon>images/icons8-plus-80(2).png</selectedon>
+                 </iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_9">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_15">
+                <property name="text">
+                 <string> Add Load to selected Device</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-plus-80(2).png</normaloff>images/icons8-plus-80(2).png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Load loads.xml File</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QPushButton" name="pushButton_12">
+                <property name="text">
+                 <string>  Browse</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-aggiungi-file-80.png</normaloff>images/icons8-aggiungi-file-80.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="default">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>Load previous build config</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QCheckBox" name="checkBox">
+                <property name="text">
+                 <string>Yes</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="lineEdit_2"/>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pushButton_13">
+                <property name="text">
+                 <string>  Submit</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-caricare-64.png</normaloff>images/icons8-caricare-64.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="Line" name="line_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="minimumSize">
+               <size>
+                <width>500</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="columnCount">
+               <number>9</number>
+              </property>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>140</number>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>EST</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>New Column</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>New Column</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>LST</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Creation_Time</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Profile</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Profil</string>
+               </property>
+              </column>
+              <column/>
+              <column/>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_14">
+                <property name="text">
+                 <string>  Save Configuration</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>images/icons8-save-close-80.png</normaloff>images/icons8-save-close-80.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Info">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/icons8-greentech-80.png</normaloff>images/icons8-greentech-80.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string> Tool Info</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="Exit">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>images/iconfinder_Log Out_27856.png</normaloff>images/iconfinder_Log Out_27856.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Exit</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1115</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew">
+    <property name="title">
+     <string>New</string>
+    </property>
+    <addaction name="actionLoad_Xml_File"/>
+   </widget>
+   <addaction name="menuNew"/>
+  </widget>
+  <action name="actionSetConfig">
+   <property name="icon">
+    <iconset theme="config">
+     <normaloff>images/iconfinder_Settings_27879.png</normaloff>images/iconfinder_Settings_27879.png</iconset>
+   </property>
+   <property name="text">
+    <string>SetConfig</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/iconfinder_Play_27865.png</normaloff>images/iconfinder_Play_27865.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Start Simulation</string>
+   </property>
+  </action>
+  <action name="actionResults">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/iconfinder_Presentation_27867.png</normaloff>images/iconfinder_Presentation_27867.png</iconset>
+   </property>
+   <property name="text">
+    <string>Results</string>
+   </property>
+   <property name="toolTip">
+    <string>Show the simulation result</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="shortcutVisibleInContextMenu" stdset="0">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/iconfinder_Log Out_27856.png</normaloff>images/iconfinder_Log Out_27856.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionLoad_Xml_File">
+   <property name="text">
+    <string>Load Xml File</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../reresource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget_2</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>addEvent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>addChargingStation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1100</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>submitLoadxml()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1027</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>992</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>deleteSelectedElementTree()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>saveXmlConfig()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1101</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>addHouse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1096</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>openFileDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1101</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>openSplashScreen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1096</x>
+     <y>669</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>openHouseSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1097</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>removeAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>683</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>openDeviceSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1101</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget_2</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>showLoads()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_15</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>addEvent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>701</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>720</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_14</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>saveConfig()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1081</x>
+     <y>701</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>763</x>
+     <y>717</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>selectLoadxml()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1051</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1097</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>selectType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>685</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>679</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>itemChanged(QTableWidgetItem*)</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>editLoad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1010</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1096</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>itemClicked(QTableWidgetItem*)</signal>
+   <receiver>GreenCharge</receiver>
+   <slot>modifyLoad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>836</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1113</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>start_Simulation()</slot>
+  <slot>display_GrigliaChange()</slot>
+  <slot>display_Grafico()</slot>
+  <slot>slot1()</slot>
+  <slot>xmlEnabled()</slot>
+  <slot>openFileDialog()</slot>
+  <slot>openFileDialog2()</slot>
+  <slot>saveXmlConfig()</slot>
+  <slot>addDevice()</slot>
+  <slot>generalDeviceEnabled()</slot>
+  <slot>ecarEnabled()</slot>
+  <slot>addDeviceAction()</slot>
+  <slot>addToConf()</slot>
+  <slot>removeFromConf()</slot>
+  <slot>removeFromPreset()</slot>
+  <slot>addProfile()</slot>
+  <slot>createXml()</slot>
+  <slot>deleteSelectedElementTree()</slot>
+  <slot>addHouse()</slot>
+  <slot>addChargingStation()</slot>
+  <slot>openSplashScreen()</slot>
+  <slot>openHouseSelection()</slot>
+  <slot>removeAll()</slot>
+  <slot>openDeviceSelection()</slot>
+  <slot>showLoads()</slot>
+  <slot>addEvent()</slot>
+  <slot>saveConfig()</slot>
+  <slot>selectLoadxml()</slot>
+  <slot>submitLoadxml()</slot>
+  <slot>editLoad()</slot>
+  <slot>pauseSimulation()</slot>
+  <slot>selectType()</slot>
+  <slot>modifyLoad()</slot>
+ </slots>
+</ui>

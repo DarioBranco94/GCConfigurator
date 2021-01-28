@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Neighborhood>
+  <house id="0">
+    <user id="0"/>
+  </house>
+  <house id="1">
+    <user id="0">
+      <device>
+        <id>0</id>
+        <est/>
+        <lst/>
+        <type>load</type>
+        <creation_time/>
+        <profile/>
+      </device>
+    </user>
+  </house>
+  <house id="2">
+    <user id="0">
+      <device>
+        <id>1</id>
+        <est/>
+        <lst/>
+        <type>load</type>
+        <creation_time/>
+        <profile/>
+      </device>
+      <ecar>
+        <id>2</id>
+        <eat>0</eat>
+        <dlt>0</dlt>
+        <creation_time>0</creation_time>
+        <profile>.csv</profile>
+        <ecarModel></ecarModel>
+        <arriveCharge>0</arriveCharge>
+        <targetCharge>0</targetCharge>
+      </ecar>
+    </user>
+  </house>
+  <chargingStation id="3">
+    <user id="0">
+      <ecar>
+        <id>3</id>
+        <eat/>
+        <dlt/>
+        <creation_time/>
+        <profile/>
+        <ecarModel/>
+        <arriveCharge/>
+        <targetCharge/>
+      </ecar>
+    </user>
+  </chargingStation>
+  <chargingStation id="4">
+    <user id="0"/>
+  </chargingStation>
+  <chargingStation id="5">
+    <user id="0"/>
+  </chargingStation>
+</Neighborhood>

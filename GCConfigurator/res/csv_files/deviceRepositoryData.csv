@@ -1,0 +1,7 @@
+WashDish,Consumer,../Inputs/0_run_3_1.csv ; ,General Device
+PVPanel,Producer,../Inputs/6_run_3_1_eout.csv ; ,General Device
+Ecar_model,Prosumer,EcarModel1,Ecar
+DishWasher,Consumer,../Inputs/2_run_4_1.csv ; ../Inputs/0_run_0_1.csv ; ,General Device
+BackGroundLoad,NS-Consumer,../Inputs/0_run_6_1.csv ; ,Background Load
+HeaterCooler,NS-Consumer,../Inputs/1_run_5_1.csv ; ,Heater/Cooler
+4tretret,Prosumer,500L,Ecar

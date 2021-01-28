@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<neighborhood id="1" name="test">
+  <house id="0">
+    <user id="0">
+      <backgroundload>
+        <type>NS-Consumer</type>
+        <name>lll</name>
+        <id>0</id>
+      </backgroundload>
+    </user>
+  </house>
+  <house id="1">
+    <user id="0">
+    </user>
+  </house>
+  <house id="2">
+    <user id="0">
+      <backgroundload>
+        <type>NS-Consumer</type>
+        <name>lll</name>
+        <id>1</id>
+      </backgroundload>
+    </user>
+  </house>
+  <house id="3">
+    <user id="0">
+      <backgroundload>
+        <type>NS-Consumer</type>
+        <name>lll</name>
+        <id>2</id>
+      </backgroundload>
+    </user>
+  </house>
+</neighborhood>
